@@ -1,0 +1,44 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+li {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 2rem);
+}
+
+@media (max-width: 768px) {
+  li {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  li {
+    flex: 1 1 100%;
+  }
+}
