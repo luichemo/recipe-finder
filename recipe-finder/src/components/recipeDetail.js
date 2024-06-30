@@ -19,6 +19,9 @@ const RecipeDetail = () => {
             apiKey: '1ff8780de9fa42debf3450edd5c84828'
           }
         });
+        // apiKey: '1ff8780de9fa42debf3450edd5c84828'
+        
+// 469cb5cf1c8d9d235a04a39e6f6d025d	
         setRecipe(response.data);
       } catch (err) {
         setError(err.message);
@@ -64,12 +67,19 @@ const RecipeDetail = () => {
           <li key={ingredient.id}>{ingredient.original}</li>
         ))}
       </ul>
-      <h2>Instructions</h2>
-      {/* Render instructions as HTML using dangerouslySetInnerHTML */}
-      <div dangerouslySetInnerHTML={{ __html: recipe.instructions }} />
-      <button onClick={handleFavorite}>
-        {isFavorited ? 'Remove from Favorites' : 'Add to Favorites'}
-      </button>
+      <div>
+  <h2 className="mb-4">Instructions</h2>
+  {/* Render instructions as HTML using dangerouslySetInnerHTML */}
+  <div
+    dangerouslySetInnerHTML={{ __html: recipe.instructions }}
+    className="mb-4"
+  />
+  <button onClick={handleFavorite} className={`btn ${isFavorited ? 'btn-danger' : 'btn-success'}`}>
+  {isFavorited ? 'Remove from Favorites' : 'Add to Favorites'}
+</button>
+
+</div>
+
     </motion.div>
   );
 };

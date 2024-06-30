@@ -20,10 +20,11 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <h1>Recipe Finder</h1>
+    <div >
+      <h1 style={{ marginBottom: 20 }}>Recipe Finder</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="ingredient" {...register('ingredient')} placeholder="Enter ingredient" />
+        <input 
+         name="ingredient" {...register('ingredient')} placeholder="Enter ingredient" />
         {errors.ingredient && <p>{errors.ingredient.message}</p>}
         <button type="submit">Search</button>
       </form>
