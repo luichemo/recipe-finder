@@ -1,4 +1,3 @@
-// src/App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -7,7 +6,7 @@ import RecipeList from './components/recipeList';
 import RecipeDetail from './components/recipeDetail';
 import Favorites from './components/favorites';
 import Navbar from './components/navbar';
-import './App.css'; // Import CSS file
+import './App.css'; 
 
 const App = () => {
   return (

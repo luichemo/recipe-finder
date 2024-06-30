@@ -1,4 +1,3 @@
-// src/components/home.js
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -21,12 +20,12 @@ const Home = () => {
 
   return (
     <div >
-      <h1 style={{ marginBottom: 20 }}>Recipe Finder</h1>
+      <h1>RECIPE FINDER</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input 
          name="ingredient" {...register('ingredient')} placeholder="Enter ingredient" />
         {errors.ingredient && <p>{errors.ingredient.message}</p>}
-        <button type="submit">Search</button>
+        <button type="submit" className='serachBtn'>Search</button>
       </form>
     </div>
   );

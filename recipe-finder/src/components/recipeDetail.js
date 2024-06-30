@@ -1,4 +1,3 @@
-// src/components/recipedetail.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -31,7 +30,6 @@ const RecipeDetail = () => {
     };
     fetchRecipe();
 
-    // Check if recipe is already favorited
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     setIsFavorited(favorites.some(fav => fav.id === parseInt(id)));
   }, [id]);
@@ -39,11 +37,10 @@ const RecipeDetail = () => {
   const handleFavorite = () => {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
-    // Toggle favorite status
     if (isFavorited) {
       favorites = favorites.filter(fav => fav.id !== parseInt(id));
     } else {
-      favorites.push(recipe); // Push whole recipe object
+      favorites.push(recipe); 
     }
 
     localStorage.setItem('favorites', JSON.stringify(favorites));
