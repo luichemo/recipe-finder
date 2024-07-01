@@ -1,3 +1,16 @@
+# პროექტში გამოყენებული ინსტრუმენტები
+bootsrap, Yup, React Hooks, React Router
+
+# გაშვების ინსტრუქცია
+გადადიხართ ამ ლინკზე : https://luichemo.github.io/recipe-finder/
+
+
+
+
+![alt text](image-2.png)
+![alt text](image-1.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,8 +3,8 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: #333;
-  background-color: rgb(166, 13, 226);
+  color: white;
+  background-color: rgb(94, 83, 99);
   font-family:Arial, Helvetica, sans-serif;
   
 }
@@ -21,8 +21,11 @@
   
 
 }
+.btnAdd{
+  margin-bottom: 20px;
+}
 img{
- border: solid 2px rgb(166, 13, 226);
+ border: solid 2px rgb(94, 83, 99);
   border-radius: 10px;
 }
 h1{
@@ -32,7 +35,7 @@ h1{
   font-weight: BOLD;
 }
 h2{
- color: rgb(166, 13, 226);
+ color: rgb(94, 83, 99);
  margin-bottom: 20px;
 
   background:none;
@@ -44,7 +47,7 @@ input{
   background-color: aliceblue;
   padding: 20px 40px; 
   font-size: 20px;
- color: rgb(166, 13, 226);
+ color: rgb(94, 83, 99);
   
 }
 
@@ -53,6 +56,8 @@ body {
   font-family: Arial, sans-serif;
   text-decoration: none;
   text-decoration-line: none;
+  max-width: 1200px;
+  margin: auto;
 }
 
 nav ul {
@@ -68,8 +73,11 @@ nav a {
 }
 nav a:hover {
   
-  color: white;
+  color: rgb(124, 7, 160);
   transition: 0.5s;
+}
+nav{
+  margin-top: 20px;
 }
 
 ul {
@@ -81,6 +89,7 @@ ul {
 }
 
 li {
+  margin: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: none;
@@ -92,18 +101,26 @@ li {
 }
 li a{
   
-color: rgb(96, 23, 193);
+color: white;
 background: none;
 font-size: 25px;
 line-height: 25px;
 font-weight: bold;
 
 }
-
+a{
+  text-decoration-line: none;
+}
 p{
+  margin-top: 20px;
+  background: none;
+}
+
+.mb-4{
   color: white;
   margin-top: 20px;
   background: none;
+  margin: 20px;
 }
 @media (max-width: 768px) {
   li {
@@ -112,15 +129,24 @@ p{
   img{
     width: 600px;
   }
+  
 }
 @media (max-width: 680px) {
   img{
     width: 300px;
   }
+  
+}
+@media (max-width: 516px) {
+  
 }
 @media (max-width: 480px) {
   li {
     flex: 1 1 100%;
+  }
+  .serachBtn{
+    margin-left: 0px;
+    margin-top: 20px;
   }
   
 }

@@ -71,7 +71,7 @@ const RecipeDetail = () => {
     dangerouslySetInnerHTML={{ __html: recipe.instructions }}
     className="mb-4"
   />
-  <button onClick={handleFavorite} className={`btn ${isFavorited ? 'btn-danger' : 'btn-success'}`}>
+  <button onClick={handleFavorite} className={`btnAdd btn ${isFavorited ? 'btn-danger' : 'btn-success'}`}>
   {isFavorited ? 'Remove from Favorites' : 'Add to Favorites'}
 </button>
 
